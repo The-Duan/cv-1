@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no, viewport-fit=cover">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>简历</title>
+</head>
+<body>
+<style id="style"></style>
+<div id="html"></div>
+<div id="div2Wrapper">
+    <div id="div1"></div>
+</div>
+<style>
+    *{
+        margin: 0;padding: 0;
+    }
+    *{
+        box-sizing: border-box;
+    }
+    *::after{box-sizing: border-box}
+    *::before{box-sizing: border-box}
+    #demo{
+        word-break: break-all;
+    }
+    #div1{
+        position: fixed;
+        left: 50%;
+        transform: translate(-50%);
+        top: 20px;
+    }
+    #div1::before{
+        position: absolute;
+        content: '';
+        display: block;
+        background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 25%, rgba(0,0,0,1) 25%, rgba(0,0,0,1) 100%);
+    }
+    #div1::after{
+        position: absolute;
+        content: '';
+        display: block;
+        background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(0,0,0,1) 25%, rgba(255,255,255,1) 25%, rgba(255,255,255,1) 100%);
+    }
+    @media (max-width:500px) {
+        #html{
+            height: 50vh;
+            overflow: auto;
+        }
+        #div2Wrapper{
+            height: 50vh;
+        }
+        #div1{
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            /*top: 0;*/
+            /*right: 0;*/
+            /*top: 80px;*/
+            /*left: 80px;*/
+        }
+    }
+</style>
+<script src="/main.12a6499a.js"></script>
+</body>
+</html>
